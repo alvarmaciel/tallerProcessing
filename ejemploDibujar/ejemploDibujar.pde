@@ -5,15 +5,15 @@ boolean activo;
 
 void setup() {
   size(800, 450);
-  smooth();
+  smooth(); // suaviza los bordes
 
   //inicializamos variables
   c=0;
-  sube=true;
+  sube=true; //usamos esta variable para la rampa de colores del dibujo
   activo=false; 
   
   background(100, 100, 40);
-  noStroke();
+  noStroke(); 
 }
 
 
