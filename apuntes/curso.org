@@ -1,1 +1,77 @@
-/home/debian/Dropbox/en uso/2012/capacitaciones/processing/curso.org
+* Clase 1 <2012-05-16 mié>
+** Presentación de Processing
+*** Qué  es 
+- Lenguaje
+  - Multiplataforma
+  - Multidestino
+  - GPL, LGPL ¿Puedo licenciar sólo como GPL mi producción?
+  - Para artes visuales
+    Se inició como un lenguaje para enseñar a programar a gente de artes visuales
+- IDE (Interfaz de desarrollo)
+- Comunidad
+*** ...Entonces?
+- Img / video algoritmico y generativo
+- Instalaciones interactivas
+- Visualización de datos
+- Diseño/arquitectura paramétrics
+- +++
+*** Porqué Programar
+- Una ventaja es poder superar las trabas de las herramientas digitales, poder generar tus propias herramientas.
+- Cuando uno conoce lo que hay abajo, se vuelve mejor usuario.
+** Desde 0/0
+- En pricipio... cambiaremos estados en los pixeles
+- Tipos de datos
+  - float // Flotante
+  - Int // Entero
+  - boolean // Boleno
+  - char // Caracter
+  - string // caddena de caracteres
+- Comentarios
+  - //
+  - /* sasdasda */
+- Variables: Declaración e inicalizar
+  - float var;//declarar un flotante
+    - var = 0.0; // incialización
+    - float var = 0.0; // Declaración e inicialización
+  - boolean vf = true;
+  - char c = 'A';
+  - string texto = "lalala"
+*** Primeros pasos
+- programa 1
+  float num1;
+  float num2;
+  float resultado;
+  num1=3;
+  num2=2;
+  resultado=(num1+num2+PI+75)*2;
+  println(resultado);// función de impresión en consola
+- Función = bloque de código al que se le  puede pasar parámetros
+- Programa 2
+    int x=15;
+    line(x,0,100,100);
+    rect (x,0,20,50);
+    ellipse (x,50,30,50);
+- Funciones
+  void setup(){ //Función que se ejecuta una vez
+  print("setup"); 
+    }
+  void draw (){// Función que se ejecuta permanetemente
+  print("draw");   
+    }
+- Las variables tienen alcances de declaración, si son de uso general del programa las declaramos afuera de las funciones.
+**** función KeyPressed es llamada cada vez que presionamos una tecla
+- SACAR UN SNAPSHOT DE NUESTRA PRODUCCIÓN
+void KeyPressed(){
+  if (key=='s'){
+     saveFrame("dibujo.png");
+  }
+}
+**** Rampa de colores
+boolean sube;
+if(sube)
+++
+else{
+c--
+
+if (c>255) sube=false
+if (c<255) sube=true
