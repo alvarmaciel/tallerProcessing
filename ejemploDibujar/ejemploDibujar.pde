@@ -13,7 +13,7 @@ void setup() {
   activo=false; 
   
   background(100, 100, 40);
-  noStroke(); 
+  noStroke(); //Sin Linea en el borde
 }
 
 
