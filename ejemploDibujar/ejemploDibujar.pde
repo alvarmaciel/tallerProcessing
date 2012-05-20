@@ -18,7 +18,7 @@ void setup() {
 
 
 void draw() {
-  fill(c, 255-c, 150, 200); 
+  fill(c, 255-c, 150, 200); // OK no entiendo esto, llena con 4 parametros 0 0-255. Pero qué es lo que llena?
   
   if (activo==true) {
     ellipse(mouseX, mouseY, 25, 25);
@@ -36,16 +36,16 @@ void draw() {
   }
 }
 
-void keyPressed() {
+void keyPressed() { // Si apreto espacio reescribo el background, osea borro lo que hice
   if (key==' ') {
     background(100, 100, 40);
   }
 }
 
-void mousePressed() {
+void mousePressed() { // Si apreto el Mouse la variable "activo" pasa a true y en el drow se dibuja la elipse
   activo=true;
 }
-void mouseReleased() {
+void mouseReleased() { // Si suelto el Mouse la variable "activo" pasa a false y se deja de dibujar la elipse
   activo=false;
 }
 
