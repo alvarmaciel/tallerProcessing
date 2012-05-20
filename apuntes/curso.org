@@ -19,16 +19,13 @@
 - Una ventaja es poder superar las trabas de las herramientas digitales, poder generar tus propias herramientas.
 - Cuando uno conoce lo que hay abajo, se vuelve mejor usuario.
 ** Desde 0/0
-- En pricipio... cambiaremos estados en los pixeles
+- En principio... cambiaremos estados en los pixeles
 - Tipos de datos
   - float // Flotante
   - Int // Entero
   - boolean // Boleno
   - char // Caracter
-  - string // caddena de caracteres
-- Comentarios
-  - //
-  - /* sasdasda */
+  - string // cadena de caracteres
 - Variables: Declaración e inicalizar
   - float var;//declarar un flotante
     - var = 0.0; // incialización
