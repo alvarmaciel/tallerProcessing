@@ -67,11 +67,12 @@ void KeyPressed(){
   }
 }
 **** Rampa de colores
+#+BEGIN_SRC java
 boolean sube;
-if(sube)
-++
+if(sube > true)
+color++
 else{
-c--
-
-if (c>255) sube=false
-if (c<255) sube=true
+color--
+if (c>255) sube=false;
+if (c<255) sube=true;
+#+END_src
