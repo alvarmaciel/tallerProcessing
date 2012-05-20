@@ -19,7 +19,8 @@ void setup() {
 
 void draw() {
   fill(c, 255-c, 150, 200); // OK no entiendo esto, llena con 4 parametros 0 0-255. Pero qué es lo que llena?
-  
+/* Ya entiendo. fill fija el color para rellenar las figuras, los tres primeros parámetros son para definir el color
+RGB y el cuarto define la transparencia ALPHA. Así la primer pasada se rellena con 0,255,150 y la segunda 2, 254,150*/
   if (activo==true) {
     ellipse(mouseX, mouseY, 25, 25);
   }
@@ -39,6 +40,9 @@ void draw() {
 void keyPressed() { // Si apreto espacio reescribo el background, osea borro lo que hice
   if (key==' ') {
     background(100, 100, 40);
+  }
+  if (key=='s'){
+    saveFrame("ejemplo-####.png");
   }
 }
 
