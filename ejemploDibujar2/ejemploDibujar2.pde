@@ -10,13 +10,13 @@ void setup() {
 
 
 void draw() {
-  if (activo==true && mouseButton == LEFT) {
+  if (activo==true && mouseButton == LEFT) { //Cuando aprieto el botón izquierdo dibujo un circulo negro con bordes blancos
     fill(0);
     stroke(255);
     ellipse(mouseX, mouseY, 80, 80);
   }
   
-  if (activo==true && mouseButton==RIGHT) {
+  if (activo==true && mouseButton==RIGHT) { //Cuando aprieto el botón derecho dibujo un circulo blanco con bordes negros
     fill(255);
     stroke (0);
     ellipse(mouseX, mouseY, 80, 80);
